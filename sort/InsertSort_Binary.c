@@ -74,7 +74,7 @@ void BinaryInsertSort(int* pData, int nLength)
 		nRight = i - 1;
 		while (nLeft <= nRight)
 		{
-			nMiddle = nLeft + (nRight - nLeft) / 2;
+			nMiddle = (nLeft + nRight) / 2;
 			if (pData[nMiddle] <= nTempValue)
 			{
 				nLeft = nMiddle + 1;
