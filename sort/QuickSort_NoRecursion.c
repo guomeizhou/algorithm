@@ -112,7 +112,7 @@ void QuickSort_NoRecursion(int* pData, int nLength)
         j = nRight;
         if (nLeft < nRight)
         {
-			// 把最左边的值作为中值。
+            // 把最左边的值作为中值。
             nTemp = pData[nLeft];
             while (i < j)
             {
@@ -135,17 +135,17 @@ void QuickSort_NoRecursion(int* pData, int nLength)
                     pData[j] = pData[i];
                     --j;
                 }
-				// 中值的下标位置是i；
-				// 当前的结果是：
-				//     [nLeft, i - 1]段的数据都小于或等于i位置的数据，i位置的数据小于或等于[i + 1, nRight]段的数据。
+                // 中值的下标位置是i；
+                // 当前的结果是：
+                //     [nLeft, i - 1]段的数据都小于或等于i位置的数据，i位置的数据小于或等于[i + 1, nRight]段的数据。
                 pData[i] = nTemp;
 
-				// 把[nLeft, i - 1]压入栈中，以后会取出来对该段数据进行排序
+                // 把[nLeft, i - 1]压入栈中，以后会取出来对该段数据进行排序
                 data.nLeft = nLeft;
                 data.nRight = i - 1;
                 StackPush(&pStackTop, &data);
 
-				// 把[i + 1, nRight]压入栈中，以后会取出来对该段数据进行排序
+                // 把[i + 1, nRight]压入栈中，以后会取出来对该段数据进行排序
                 data.nLeft = i + 1;
                 data.nRight = nRight;
                 StackPush(&pStackTop, &data);
