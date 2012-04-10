@@ -9,9 +9,9 @@
  */
 
 /* 程序输出如下:
-[********** Before QuickSort_NoRecursion **********]
+[********** Before NoRecursionQuickSort **********]
 2, 46, 5, 17, 2, 3, 99, 12, 66, 21
-[********** After QuickSort_NoRecursion **********]
+[********** After NoRecursionQuickSort **********]
 2, 2, 3, 5, 12, 17, 21, 46, 66, 99
 */
 
@@ -34,12 +34,12 @@ typedef struct StackNode
 /*
  * 功能: 快速排序(非递归)。
  *       用栈来实现快速排序，每趟排序中都把待排序列中的第1个值作为中值。
- * 名称: QuickSort_NoRecursion。
+ * 名称: NoRecursionQuickSort。
  * 参数: int* pData，指向一个整数数组。
  * 参数: int nLength，数组的长度。
  * 返回值: void。
  */
-void QuickSort_NoRecursion(int* pData, int nLength);
+void NoRecursionQuickSort(int* pData, int nLength);
 
 /*
  * 功能: 入栈。
@@ -72,18 +72,18 @@ int main()
 {
 	int arrData[10] = {2, 46, 5, 17, 2, 3, 99, 12, 66, 21};
 
-	printf("[********** Before QuickSort_NoRecursion **********]\n");
+	printf("[********** Before NoRecursionQuickSort **********]\n");
 	Output(arrData, sizeof(arrData) / sizeof(int));
 
-	QuickSort_NoRecursion(arrData, sizeof(arrData) / sizeof(int));
+	NoRecursionQuickSort(arrData, sizeof(arrData) / sizeof(int));
 
-	printf("[********** After QuickSort_NoRecursion **********]\n");
+	printf("[********** After NoRecursionQuickSort **********]\n");
 	Output(arrData, sizeof(arrData) / sizeof(int));
 
 	return 0;
 }
 
-void QuickSort_NoRecursion(int* pData, int nLength)
+void NoRecursionQuickSort(int* pData, int nLength)
 {
     int i = 0;
     int j = 0;
