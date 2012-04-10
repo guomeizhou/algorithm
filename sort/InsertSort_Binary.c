@@ -86,6 +86,7 @@ void BinaryInsertSort(int* pData, int nLength)
 		}
 
 		// nTempValue的插入位置是nLeft
+		// 注意: 此时，nLeft = nRight + 1
 		for (j = i; j > nLeft; --j)
 		{
 			pData[j] = pData[j - 1];
