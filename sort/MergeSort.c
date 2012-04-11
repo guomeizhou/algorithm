@@ -69,7 +69,7 @@ int main()
 
 void MergeSort(int* pData, int nLeft, int nRight)
 {
-    if (nLeft < nRight)
+	if (nLeft < nRight)
 	{
 		// 将[nLeft, nRight]范围平分成[nLeft, nMiddle]和[nMiddle + 1, nRight]两个范围
 		int nMiddle = (nLeft + nRight) / 2;
