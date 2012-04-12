@@ -40,6 +40,14 @@
  */
 void HeapSort(int* pData, int nLength);
 
+/*
+ * 功能: 堆调整。
+ *       为pData[nPos]值在[0, nLength - 1]中找位置。
+ * 名称: HeapAdjust。
+ * 参数: int* pData，指向一个整数数组。
+ * 参数: int nLength，调整的数据的长度。
+ * 返回值: void。
+ */
 void HeapAdjust(int* pData, int nPos, int nLength);
 void Output(const int* pData, int nLength);
 
