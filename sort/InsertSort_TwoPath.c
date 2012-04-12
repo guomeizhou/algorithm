@@ -71,7 +71,7 @@ void TwoPathInsertSort(int* pData, int nLength)
 	int nFinal = 0;
 	// pTempData: 临时数据块。
 	int* pTempData = (int*)malloc(sizeof(int) * nLength);
-	memset(pTempData, 0, nLength);
+	memset(pTempData, 0, sizeof(int) * nLength);
 
 	// pData中的第1个数据元素为pTempData中排好序的数据元素。
 	pTempData[0] = pData[0];
