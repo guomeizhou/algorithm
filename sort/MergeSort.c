@@ -6,7 +6,7 @@
  * 取名原因: 将两个(或两个以上)有序序列合并成一个新的有序序列，即把待排序序列分为若干个子序列，
  *           每个子序列是有序的，然后再把有序子序列合并为整体有序序列，所以称作归并排序。
  * 平均时间复杂度: O(nlogn)。
- * 平均时间复杂度: O(n)。
+ * 平均空间复杂度: O(n)。
  * 具有稳定性。
  * 归并排序是分治法(Divide and Conquer)的一个非常典型的应用。
  */
@@ -94,7 +94,7 @@ void Merge(int* pData, int nLeft, int nMiddle, int nRight)
 	int nLength = nRight - nLeft + 1;
 	// pTempData: 临时数据块，用来存放归并后的有序序列。
 	int* pTempData = (int*)malloc(sizeof(int) * nLength);
-	memset(pTempData, 0, nLength);
+	memset(pTempData, 0, sizeof(int) * nLength);
 
 	// 把有序的[nLeft, nMiddle]范围的数据和有序的[nMiddle + 1, nRight]范围的数据归并到pTempData中。
 	while (i <= nMiddle && j <= nRight)
