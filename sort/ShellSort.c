@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <malloc.h>
-#include <memory.h>
 
 /*
  * 取名原因: 将整个序列分割成若干小的子序列分别进行插入排序，每一趟排序分割成的子序列的长度在逐渐减小，直到减少到1，
