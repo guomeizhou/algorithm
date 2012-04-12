@@ -40,7 +40,6 @@
  */
 void HeapSort(int* pData, int nLength);
 
-
 void HeapAdjust(int* pData, int nPos, int nLength);
 void Output(const int* pData, int nLength);
 
