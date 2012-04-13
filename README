@@ -19,6 +19,5 @@
 快速排序              QuickSort.c
 非递归快速排序        QuickSort_NoRecursion.c
 基数排序              RadixSort.c
+选择排序              SelectSort.c
 希尔排序              ShellSort.c
-
-/////////////////////////////////////////////////////////
