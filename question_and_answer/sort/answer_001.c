@@ -8,6 +8,11 @@
 #define MAN_NUM 900
 #define DATA_LENGTH 5000000
 
+/*
+ * 解法: 创建(MAN_NUM - MIN_NUM + 1)个桶，桶编号的从MIN_NUM到MAN_NUM，将每个考生的分数score放入桶score中，
+ *       然后根据桶号的大小依次将桶中分数输出，即可以得到一个有序的序列。
+ */
+
 typedef struct DataNode
 {
 	int nData;
