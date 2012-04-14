@@ -10,6 +10,8 @@
 
 功能                  文件名
 冒泡排序              BubbleSort.c
+桶排序                BucketSort.c
+计数排序              CountingSort.c
 堆排序                HeapSort.c
 插入排序              InsertSort.c
 二分插入排序          InsertSort_Binary.c
