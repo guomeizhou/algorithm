@@ -23,3 +23,11 @@
 基数排序              RadixSort.c
 选择排序              SelectSort.c
 希尔排序              ShellSort.c
+
+/////////////////////////////////////////////////////////
+
+路径: ./question_and_answer/sort/
+内容: 有关排序的问题和答案
+
+问题文件名: question.txt
+答案文件名: answer_001.c ~ answer_002.c
